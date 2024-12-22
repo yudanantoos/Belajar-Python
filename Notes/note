@@ -1,0 +1,23 @@
+a -> tampilkan
+                        2.1.1.2 tidak_ada -> input ? input_overtime : kembali_ke_menu
+        2.2. input_overtime
+                2.2.1 cek_gapok
+                        2.2.1.1 gapok_sudah_diisi -> input_jam -> input_tanggal
+                        2.2.1.2 gapok_belum_diissi -> input_gapok -> input_jam -> input_tanggal
+                2.2.2 cek_jam_kerja
+                        2.2.2.1 lembur_hari_biasa -> jam_pertama x 1.5
+                        2.2.2.2 lembur_hari_libur -> jam_pertama x 2
+                2.2.3 proses
+                        2.2.3.1 lembur_hari_biasa -> 1.5 + (jam_lembur - 1) * 2
+                        2.2.3.2 Lembur_hari_libur -> 2 + (jam_lembur - 1) * 2
+                2.2.4 save
+                        2.2.4.1 berhasil -> kembali_ke_menu
+                        2.2.4.2 data_sudah_ada -> edit ? edit_overtime : kembali_ke_menu
+        2.3. edit_overtime
+                2.3.1 pilih_data
+                        2.3.1.1 masukkan_no_pilihan -> edit -> valid ? save -> kembali_ke_menu : koreksi
+        2.4. hapus_overtime
+                2.4.1 pilih_data
+                        2.4.1.1 masukkan_no_pilihan -> hapus -> terhapus -> kembali_ke_menu : koreksi
+        2.5. input_gapok
+                2.5.1 input_gapok ? save -> kembali_ke_menu : koreksi
