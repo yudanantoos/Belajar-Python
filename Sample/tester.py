@@ -118,4 +118,3 @@ print(f"Isi ini_list terbaru: {ini_list}")
 
 import _ot_calculation
 
-_ot_calculation.ambil_data()

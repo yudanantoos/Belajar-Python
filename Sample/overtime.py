@@ -3,7 +3,7 @@ import _ot_operation
 while(True):
     # Menu
     print("")
-    print("====================== OVERTIME ======================")
+    print("="*45+" OVERTIME "+"="*45)
     print("Silahkan Pilih Menu")
     print("1. Data Overtime")
     print("2. Input Overtime")
@@ -21,7 +21,7 @@ while(True):
     elif masukan == '4':
         _ot_operation.hapus_overtime()
     elif masukan == '5':
-        _ot_operation.input_gapok()
+        _ot_operation.input_gaji_pokok()
     elif masukan == '6':
         print("Program ditutup!")
         exit()
