@@ -87,15 +87,35 @@ with open('../Data/tes_file', 'w') as p:
 
 p.close()
 """
+"""
+ini_dict = {}
+ini_list = [ini_dict]
 
-with open("../Data/tes_file.json", 'r') as op:
-    baca = op.read()
+ini_dict['satu'] = 1
 
-qiu = json.loads(baca)
+ini_dict2 = {'dua':2}
 
-print(qiu)
-print(qiu['2024'])
-print(qiu['2024']['January'])
-print(qiu['2024']['January'][0])
-print(qiu['2024']['January'][0]['Tanggal'])
-print(qiu['2024']['January'][0]['Jam lembur'])
+print(f"ini_list sebelum ditambah {ini_list}")
+
+ini_list.append(ini_dict2)
+
+print(f"ini_list sesudah ditambah {ini_list}")
+
+o ="dua"
+k = 3
+
+for i in ini_list:
+    p = o not in i
+
+if p:
+    ini_list.append({o:k})
+else:
+    g = ini_list.index({o:2})
+    ini_list[g] = {o:k}
+
+print(f"Isi ini_list terbaru: {ini_list}")
+"""
+
+import _ot_calculation
+
+_ot_calculation.ambil_data()

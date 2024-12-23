@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2902d736-ac05-4fe7-ac1c-d99b116cbee2" name="Changes" comment="Add virtual environment" />
+    <list default="true" id="2902d736-ac05-4fe7-ac1c-d99b116cbee2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Belajar-Git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Belajar-Git.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample/_ot_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/_ot_calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample/_ot_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/_ot_operation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/tester.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +31,7 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2qOqRHEbapHcKUjO5I8sFqPMlpj" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -33,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python._ot_calculation.executor": "Run",
     "Python.calendar_test.executor": "Run",
     "Python.overtime.executor": "Run",
     "Python.tester.executor": "Run",
@@ -63,6 +71,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add virtual environment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add virtual environment" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

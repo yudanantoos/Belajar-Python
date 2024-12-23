@@ -1,0 +1,70 @@
+Index: Sample/tes_kalender.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Sample/tes_kalender.py b/Sample/tes_kalender.py
+new file mode 100644
+--- /dev/null	(date 1734676512353)
++++ b/Sample/tes_kalender.py	(date 1734676512353)
+@@ -0,0 +1,6 @@
++import calendar
++
++harian = calendar.day_name[5:]
++liburan = calendar.day_name[:5]
++jam_pertama = 1.5
++sebelum_jam_delapan = 2
+\ No newline at end of file
+Index: overtime/calculation.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/overtime/calculation.py b/overtime/calculation.py
+new file mode 100644
+--- /dev/null	(date 1734683402871)
++++ b/overtime/calculation.py	(date 1734683402871)
+@@ -0,0 +1,20 @@
++import calendar
++
++hari_biasa = calendar.day_name[:5]
++hari_libur = calendar.day_name[5:]
++gapok_harian = 0
++
++def rumus(gapok):
++    gapok_harian = gapok * 1/176
++    return gapok_harian
++
++def jam_pertama(hari):
++    if hari in hari_biasa:
++        return
++    return
++
++def sebelum_delapan_jam():
++    return
++
++def jumlah_perkalian():
++    return
+\ No newline at end of file
+Index: .idea/Belajar-Git.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.venv\" />\r\n    </content>\r\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.12 (Belajar-Git)\" jdkType=\"Python SDK\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Belajar-Git.iml b/.idea/Belajar-Git.iml
+--- a/.idea/Belajar-Git.iml	(revision e217248875d280d3cfddb520b68f9fdb29b8d995)
++++ b/.idea/Belajar-Git.iml	(date 1734656677145)
+@@ -4,7 +4,7 @@
+     <content url="file://$MODULE_DIR$">
+       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+     </content>
+-    <orderEntry type="jdk" jdkName="Python 3.12 (Belajar-Git)" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.12 (Belajar-Python)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
+diff --git a/overtime/__init__.py b/overtime/__init__.py
+new file mode 100644
