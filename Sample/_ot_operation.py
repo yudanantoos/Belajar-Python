@@ -12,6 +12,7 @@ def semua_data_overtime():
             for i in _ot_calculation.ambil_data()[th][u]:
                 print(f"{no}\t\t{i["Tanggal"]}\t\t\t{i["Jam lembur"]}\t\t\t\t\t\t{i["Perkalian jam lembur"]}\t\t\t\t\t\t{_ot_calculation.format_rupiah(i["Nominal uang lembur"])}")
                 no += 1
+    print("=" * 100)
 
 def data_overtime():
     if len(_ot_calculation.ambil_data()) != 0:
