@@ -17,6 +17,7 @@ def data_overtime():
     if len(_ot_calculation.ambil_data()) != 0:
         print("1. Pilih tahun dan bulan")
         print("2. Tampilkan semua")
+        print("Input pilihan:")
         ouwe = input()
         if ouwe == '1':
             print("Data yang tersedia:")
@@ -179,6 +180,7 @@ def hapus_overtime():
         yos = _ot_calculation.ambil_data()
         print("Pilih metode hapus")
         print("1. Hapus tahunan\t\t2. Hapus bulanan\t\t3. Hapus harian")
+        print("Input pilihan:")
         i = input()
         if i == '1':
             print("Data pertahun:")

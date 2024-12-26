@@ -26,7 +26,7 @@ def back_to_menu():
 
 menu()
 while True:
-    print("Input :")
+    print("Input pilihan:")
     masukan = input()
     if masukan == '1':
         _ot_operation.data_overtime()
