@@ -15,7 +15,7 @@ def semua_data_overtime():
     print("=" * 100)
 
 def data_overtime():
-    if len(_ot_calculation.ambil_data()) != 0:
+    if len(_ot_calculation.ambil_data()) > 0:
         print("1. Pilih tahun dan bulan")
         print("2. Tampilkan semua")
         print("Input pilihan:")
