@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2902d736-ac05-4fe7-ac1c-d99b116cbee2" name="Changes" comment="Add virtual environment" />
+    <list default="true" id="2902d736-ac05-4fe7-ac1c-d99b116cbee2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/data-overtime.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample/_ot_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/_ot_calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample/_ot_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/_ot_operation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample/dipanggil.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/dipanggil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample/overtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/overtime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample/pemanggil.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/pemanggil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/tester.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,11 +30,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "yudanantoos"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/yudanantoos/Belajar-Python.git",
+    "accountId": "571b240d-87b8-4054-ae4d-4b313ff004a1"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2qOqRHEbapHcKUjO5I8sFqPMlpj" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -33,14 +55,24 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python._ot_calculation.executor": "Run",
+    "Python._ot_operation.executor": "Run",
     "Python.calendar_test.executor": "Run",
     "Python.overtime.executor": "Run",
-    "Python.tester.executor": "Run",
+    "Python.pemanggil.executor": "Run",
+    "Python.tester.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,6 +95,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add virtual environment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add virtual environment" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

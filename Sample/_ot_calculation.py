@@ -1,111 +1,105 @@
-import calendar
 import json
-from pkgutil import get_loader
+import os.path
+import calendar
 
 databasenya = "../Data/data-overtime.json"
-nilai_gapok = 0
-penyimpanan_harian = []
-penyimpanan_bulanan = {}
-penyimpanan_tahunan = {}
-global tanggal
-global bulan
-global tahun
-global jam_lembur
-global jam_pertama
-global jam_selanjutnya
+database_gapok = "../Data/data-gapok.json"
+hasil_perkalian_jam = 0
+hasil_uang_lemburan = 0
+
+def cek_database():
+    if not os.path.exists(databasenya) or not os.path.exists(database_gapok):
+        penyimpanan_data = {}
+        penyimpanan_gapok = {'Gapok':0}
+        pd = json.dumps(penyimpanan_data)
+        pg = json.dumps(penyimpanan_gapok)
+        with open(databasenya,'w') as fley:
+            fley.write(pd)
+        fley.close()
+        with open(database_gapok,'w') as floy:
+            floy.write(pg)
+        floy.close()
 
 def ambil_data():
+    cek_database()
     with open(databasenya, 'r') as buka:
         g = buka.readline()
-
+    penyimpanan = json.loads(g)
     buka.close()
+    return penyimpanan
 
-    konversi = json.loads(g)
+def input_data(penyimpanan):
+    s = json.dumps(penyimpanan)
+    with open(databasenya, 'w') as simpan:
+        simpan.write(s)
+        if simpan.writable():
+            print("Data lembur berhasil disimpan")
+        else:
+            print("Ada kesalahan, data lembur belum tersimpan")
+    simpan.close()
 
-    global penyimpanan_tahunan
-    penyimpanan_tahunan = konversi
+def edit_data(edit):
+    cek_database()
+    if len(ambil_data()) != 0:
+        s = json.dumps(edit)
+        with open(databasenya, 'r+') as simpan:
+            simpan.write(s)
+            if simpan.writable():
+                print("Data lembur berhasil diedit dan disimpan")
+            else:
+                print("Ada kesalahan, data lembur belum diedit dan tersimpan")
+        simpan.close()
+    else:
+        print("Belum ada data yang bisa diedit")
 
-    global penyimpanan_bulanan
-    penyimpanan_bulanan = penyimpanan_tahunan['2024']
+def hapus_data(hapus):
+    cek_database()
+    if len(ambil_data()) != 0:
+        s = json.dumps(hapus)
+        with open(databasenya, 'w') as hp:
+            hp.write(s)
+            if hp.writable():
+                print("Data lembur berhasil dihapus")
+            else:
+                print("Ada kesalahan, data lembur belum terhapus")
+        hp.close()
+    else:
+        print("Belum ada data yang bisa dihapus")
 
-    global penyimpanan_harian
-    penyimpanan_harian = penyimpanan_bulanan['12']
+def ambil_gapok():
+    cek_database()
+    with open(database_gapok, 'r') as baca:
+        lihat = baca.readline()
+    konversi = json.loads(lihat)
+    baca.close()
+    return float(konversi['Gapok'])
 
-    print("No \t\t Tanggal \t\t Jam lembur \t\t Perkalian Jam Lembur \t\t Nominal Uang Lembur")
-    print('='*100)
-    no = 1
-    for i in penyimpanan_harian:
-        print(f"{no}\t\t{i["Tanggal"]}\t\t\t{i["Jam lembur"]}\t\t\t\t\t\t{i["Perkalian jam lembur"]}\t\t\t\t\t\t\t{i["Nominal uang lembur"]}")
-        no = no + 1
+def input_gapok(gapok):
+    tampung = {'Gapok': gapok}
+    js = json.dumps(tampung)
+    with open(database_gapok, 'w') as simpan:
+        simpan.write(js)
+        if simpan.writable():
+            print("Gapok berhasil disimpan")
+        else:
+            print("Ada kesalahan, gapok belum tersimpan")
+    simpan.close()
 
-def input_data():
-    if nilai_gapok == 0:
-        print("Gapok masih 0, mau masukkin gapoknya?")
-        print("1. Ya")
-        print("2. Tidak")
-        p = int(input())
-        if p == 1:
-            input_gapok()
-    print("Masukkan Tanggal 1 - 31: ")
-    tanggal = int(input())
-    print("Masukkan Bulan 1 - 12: ")
-    bulan = int(input())
-    print("Masukkan Tahun 1970 - Sekarang: ")
-    tahun = int(input())
-    print("Masukkan Jam Lembur: ")
-    jam_lembur = float(input())
+def rumus(tahun, bulan, tanggal, jam_lembur):
+    global hasil_perkalian_jam, hasil_uang_lemburan
 
-    gaji_perjam = nilai_gapok * 1 / 176
-    jam_selanjutnya = (jam_lembur - 1) * 2
-    cal = calendar.weekday(tahun, bulan, tanggal)
+    cal = calendar.weekday(int(tahun), int(bulan), int(tanggal))
 
     if cal == 5 or cal == 6:
         jam_pertama = 2
     else:
         jam_pertama = 1.5
+    jam_selanjutnya = (jam_lembur - 1) * 2
 
+    gaji_perjam = ambil_gapok() * 1 / 173
     hasil_perkalian_jam = jam_pertama + jam_selanjutnya
     hasil_uang_lemburan = gaji_perjam * hasil_perkalian_jam
 
-    b = True
-    for i in penyimpanan_harian:
-        b = f"{tanggal}/{bulan}/{tahun}" not in i
-
-    if b:
-        penyimpanan_harian.append({'Tanggal': f"{tanggal}/{bulan}/{tahun}", 'Jam lembur': jam_lembur,
-                                   "Perkalian jam lembur": hasil_perkalian_jam,
-                                   "Nominal uang lembur": hasil_uang_lemburan})
-    else:
-        g = penyimpanan_harian.index({'Tanggal': f"{tanggal}/{bulan}/{tahun}", 'Jam lembur': jam_lembur,
-                                      "Perkalian jam lembur": hasil_perkalian_jam,
-                                      "Nominal uang lembur": hasil_uang_lemburan})
-        penyimpanan_harian[g] = {'Tanggal': f"{tanggal}/{bulan}/{tahun}", 'Jam lembur': jam_lembur,
-                                 "Perkalian jam lembur": hasil_perkalian_jam,
-                                 "Nominal uang lembur": hasil_uang_lemburan}
-
-    penyimpanan_bulanan[bulan] = penyimpanan_harian
-    penyimpanan_tahunan[tahun] = penyimpanan_bulanan
-
-    s = json.dumps(penyimpanan_tahunan)
-
-    with open('../Data/data-overtime.json', 'w') as p:
-        simpan = p.write(s)
-
-    if simpan:
-        print("Berhasil disimpan")
-    else:
-        print("Gagal menyimpan")
-
-    p.close()
-
-def edit_data():
-    return
-
-def hapus_data():
-    return
-
-def input_gapok():
-    global nilai_gapok
-    print("Silahkan masukkan gapoknya.")
-    nilai_gapok = float(input())
-    print(f"Gapok sudah diisi: {nilai_gapok}")
+def format_rupiah(nominal):
+    rubah = 'Rp{:,.2f}'.format(nominal)
+    return rubah

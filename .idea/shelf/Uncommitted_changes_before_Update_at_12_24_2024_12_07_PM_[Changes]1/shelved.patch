@@ -1,0 +1,79 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"2902d736-ac05-4fe7-ac1c-d99b116cbee2\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/Belajar-Git.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/Belajar-Git.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Sample/_ot_calculation.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Sample/_ot_calculation.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Sample/_ot_operation.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Sample/_ot_operation.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Sample/tester.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Sample/tester.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2qOqRHEbapHcKUjO5I8sFqPMlpj\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Python._ot_calculation.executor\": \"Run\",\r\n    \"Python.calendar_test.executor\": \"Run\",\r\n    \"Python.overtime.executor\": \"Run\",\r\n    \"Python.tester.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"main\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"2902d736-ac05-4fe7-ac1c-d99b116cbee2\" name=\"Changes\" comment=\"\" />\r\n      <created>1734543960363</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1734543960363</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Add virtual environment\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734544124833</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734544124833</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Add virtual environment\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 598674dd83408cb82cb440ba925628e3cb512592)
++++ b/.idea/workspace.xml	(date 1734947601976)
+@@ -4,14 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="2902d736-ac05-4fe7-ac1c-d99b116cbee2" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/Belajar-Git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Belajar-Git.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Sample/_ot_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/_ot_calculation.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Sample/_ot_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/_ot_operation.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Sample/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/tester.py" afterDir="false" />
+-    </list>
++    <list default="true" id="2902d736-ac05-4fe7-ac1c-d99b116cbee2" name="Changes" comment="Senin 23/12/2024" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -40,7 +33,7 @@
+   </component>
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+-    "Python._ot_calculation.executor": "Run",
++    "Python._ot_calculation.executor": "Debug",
+     "Python.calendar_test.executor": "Run",
+     "Python.overtime.executor": "Run",
+     "Python.tester.executor": "Run",
+@@ -66,11 +59,20 @@
+       <option name="project" value="LOCAL" />
+       <updated>1734544124833</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Senin 23/12/2024">
++      <option name="closed" value="true" />
++      <created>1734947586186</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1734947586187</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Add virtual environment" />
+-    <option name="LAST_COMMIT_MESSAGE" value="" />
++    <MESSAGE value="Senin 23/12/2024" />
++    <option name="LAST_COMMIT_MESSAGE" value="Senin 23/12/2024" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/Belajar-Git.iml\" filepath=\"$PROJECT_DIR$/.idea/Belajar-Git.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision 598674dd83408cb82cb440ba925628e3cb512592)
++++ b/.idea/modules.xml	(date 1735016810336)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/Belajar-Git.iml" filepath="$PROJECT_DIR$/.idea/Belajar-Git.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/Belajar-Python.iml" filepath="$PROJECT_DIR$/.idea/Belajar-Python.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
