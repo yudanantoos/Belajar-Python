@@ -1,6 +1,7 @@
 import dipanggil
+from Sample.dipanggil import Nyobaan
 
-dipanggil.yang_dipanggil()
+#dipanggil.yang_dipanggil()
 
 """
 Kesimpulan from dan import
@@ -13,3 +14,16 @@ Fungsi file __init__.py
 - kalau mau dieksekusi langsung harus disebutkan nama package nya
 - jadi format di atas dipakai di file __init__.py yang tidak di eksekusi tapi sebatas deklarasi
 """
+
+p = dipanggil
+p.tes_var = 10
+print(p.tes_var)
+print(type(p))
+print(type(p.tes_var))
+
+q = Nyobaan()
+q.tes_var_class = 10
+print(q)
+print(q.tes_var_class)
+print(type(q))
+print(type(q.tes_var_class))

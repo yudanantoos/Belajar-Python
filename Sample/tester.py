@@ -117,4 +117,16 @@ print(f"Isi ini_list terbaru: {ini_list}")
 """
 
 import _ot_calculation
+import  _ot_operation
+"""
+o = _ot_calculation.ambil_data()
 
+for u in o:
+    print(u)
+print(o)
+
+y = o.pop('2024')
+print(y)
+print(o)
+"""
+_ot_operation.semua_data_overtime()
