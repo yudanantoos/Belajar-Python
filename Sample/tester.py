@@ -129,4 +129,24 @@ y = o.pop('2024')
 print(y)
 print(o)
 """
-_ot_operation.semua_data_overtime()
+
+import configparser
+
+config = configparser.ConfigParser()
+
+config['DEFAULT'] = {'ServerAliveInterval': '45',
+                     'Compression': 'yes',
+                     'CompressionLevel': '9'}
+config['forge.example'] = {}
+config['forge.example']['User'] = 'hg'
+config['topsecret.server.example'] = {}
+topsecret = config['topsecret.server.example']
+topsecret['Port'] = '50022'     # mutates the parser
+topsecret['ForwardX11'] = 'no'  # same here
+config['DEFAULT']['ForwardX11'] = 'yes'
+
+with open('tes.ini', 'w') as ipou:
+    config.write(ipou)
+
+print(config.read('tes.ini'))
+print(config.sections())
