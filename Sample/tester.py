@@ -1,5 +1,8 @@
 import calendar
+import configparser
 import json
+
+from Sample.pengaturan import pengaturan
 
 """
 cal = calendar.month(2008, 1)
@@ -129,24 +132,8 @@ y = o.pop('2024')
 print(y)
 print(o)
 """
+import pengaturan
 
-import configparser
+a = pengaturan.load_pengaturan()
 
-config = configparser.ConfigParser()
-
-config['DEFAULT'] = {'ServerAliveInterval': '45',
-                     'Compression': 'yes',
-                     'CompressionLevel': '9'}
-config['forge.example'] = {}
-config['forge.example']['User'] = 'hg'
-config['topsecret.server.example'] = {}
-topsecret = config['topsecret.server.example']
-topsecret['Port'] = '50022'     # mutates the parser
-topsecret['ForwardX11'] = 'no'  # same here
-config['DEFAULT']['ForwardX11'] = 'yes'
-
-with open('tes.ini', 'w') as ipou:
-    config.write(ipou)
-
-print(config.read('tes.ini'))
-print(config.sections())
+print(a['DEFAULT']['datafile'])

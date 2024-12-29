@@ -1,0 +1,77 @@
+Index: Sample/tester.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import calendar\r\nimport json\r\n\r\n\"\"\"\r\ncal = calendar.month(2008, 1)\r\n#print(\"Dibawah ini adalah kalender:\")\r\n#print(cal)\r\n\r\nco = calendar.weekday(2024,12,20)\r\n#print(co)\r\n\"\"\"\r\n\r\n\"\"\"\r\nwith open(\"../Notes/note\", \"r\") as p:\r\n    #baca = p.write(\"Tes membuat file lagi dan lagi \\n\")\r\n    #baca = p.readlines()\r\n    for a in p:\r\n        print(a)\r\n\r\np.close()\r\n\"\"\"\r\n\r\n\"\"\"\r\nt = {\"nama\" : \"VCNC\", \"Agama\" : \"Islam\", \"TTD\" : \"04-10-1990\"}\r\n\r\nfor i in t:\r\n    print(f\"{i} : {t[i]}\")\r\n\"\"\"\r\n\r\n\"\"\"\r\nhari = [\"Senin\", \"Selasa\", \"Rabu\", \"Kamis\", \"Jum\\'at\", \"Sabtu\", \"Minggu\"]\r\nbulan = [\"Januari\", \"Februari\", \"Maret\", \"April\", \"Mei\", \"Juni\", \"Juli\", \"Agustus\", \"September\", \"Oktober\", \"November\", \"Desember\"]\r\n\r\nprint(\"Pilih tanggalnya: \")\r\no = int(input())\r\nprint(\"Pilih bulan nya: \")\r\np = int(input())\r\nprint(\"Pilih tahun nya: \")\r\nq = int(input())\r\n\r\nca = calendar.weekday(q, p, o)\r\n\r\nprint(f\"Tanggal yang dipilih : {o}/{p}/{q} adalah hari: {hari[ca]}\")\r\n\"\"\"\r\n\r\n\"\"\"\r\nprint(\"Masukkan Gapok:\")\r\ngapok = float(input())\r\nprint(\"Masukkan tanggal:\")\r\ntanggal = int(input())\r\nprint(\"Masukkan bulan:\")\r\nbulan = int(input())\r\nprint(\"Masukkan tahun:\")\r\ntahun = int(input())\r\nprint(\"Masukkan jam lembur:\")\r\njam_lembur = float(input())\r\n\r\nca = calendar.weekday(tahun, bulan, tanggal)\r\n\r\nif ca == 5 or ca == 6:\r\n    jam_pertama = 2\r\nelse:\r\n    jam_pertama = 1.5\r\n\r\ngaji_perjam = gapok * 1 / 176\r\njam_selanjutnya = (jam_lembur - 1) * 2\r\njam_perkalian = jam_pertama + jam_selanjutnya\r\nnominal_perkalian = gaji_perjam * jam_perkalian\r\n\"\"\"\r\n\r\n#q = oe.append(\"Tambahan\")\r\n#p = json.dumps(oe)\r\n\"\"\"\r\nwith open('../Data/tes_file.json', 'r+') as o:\r\n    baca = o.read()\r\nl = json.loads(baca)\r\n\r\noe = l\r\nprint(oe[0])\r\n\"\"\"\r\n\"\"\"\r\nisikan = penyimpanan_list.append({\"Tanggal\" : str(f\"{tanggal}/{bulan}/{tahun}\"), \"Jam lembur\" : jam_lembur, \"Jam perkalian\" : jam_perkalian, \"Nominal\" : nominal_perkalian})\r\npenyimpanan_dict = {tahun : penyimpanan_list}\r\n\r\nwith open('../Data/tes_file', 'w') as p:\r\n    tulis = p.write(str(penyimpanan_dict))\r\n\r\np.close()\r\n\"\"\"\r\n\"\"\"\r\nini_dict = {}\r\nini_list = [ini_dict]\r\n\r\nini_dict['satu'] = 1\r\n\r\nini_dict2 = {'dua':2}\r\n\r\nprint(f\"ini_list sebelum ditambah {ini_list}\")\r\n\r\nini_list.append(ini_dict2)\r\n\r\nprint(f\"ini_list sesudah ditambah {ini_list}\")\r\n\r\no =\"dua\"\r\nk = 3\r\n\r\nfor i in ini_list:\r\n    p = o not in i\r\n\r\nif p:\r\n    ini_list.append({o:k})\r\nelse:\r\n    g = ini_list.index({o:2})\r\n    ini_list[g] = {o:k}\r\n\r\nprint(f\"Isi ini_list terbaru: {ini_list}\")\r\n\"\"\"\r\n\r\nimport _ot_calculation\r\nimport  _ot_operation\r\n\"\"\"\r\no = _ot_calculation.ambil_data()\r\n\r\nfor u in o:\r\n    print(u)\r\nprint(o)\r\n\r\ny = o.pop('2024')\r\nprint(y)\r\nprint(o)\r\n\"\"\"\r\n_ot_operation.semua_data_overtime()
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Sample/tester.py b/Sample/tester.py
+--- a/Sample/tester.py	(revision 418ce141457b71b39c822edbae958c3d3a16931d)
++++ b/Sample/tester.py	(date 1735405448286)
+@@ -1,4 +1,5 @@
+ import calendar
++import datetime
+ import json
+ 
+ """
+@@ -129,4 +130,9 @@
+ print(y)
+ print(o)
+ """
+-_ot_operation.semua_data_overtime()
+\ No newline at end of file
++import calendar
++
++a = calendar.TextCalendar().monthdatescalendar(2024,11)
++b = datetime.date.today()
++c = b.__doc__
++print(c)
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"2902d736-ac05-4fe7-ac1c-d99b116cbee2\" name=\"Changes\" comment=\"edit .gitignore file\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;yudanantoos&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/yudanantoos/Belajar-Python.git&quot;,\r\n    &quot;accountId&quot;: &quot;571b240d-87b8-4054-ae4d-4b313ff004a1&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2qOqRHEbapHcKUjO5I8sFqPMlpj\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Python._ot_calculation.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python._ot_operation.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.calendar_test.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.overtime.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.pemanggil.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.tester.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"2902d736-ac05-4fe7-ac1c-d99b116cbee2\" name=\"Changes\" comment=\"\" />\r\n      <created>1734543960363</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1734543960363</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Add virtual environment\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734544124833</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734544124833</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"finish all fungtions\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735237498699</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1735237498699</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"add print(&quot;Input pilihan:&quot;)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735238358720</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1735238358720</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"add .gitignore\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735238604453</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1735238604453</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Re-check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735238922288</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1735238922288</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"edit .gitignore file\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735239244414</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1735239244414</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"edit .gitignore file\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735239321158</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1735239321158</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"8\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Add virtual environment\" />\r\n    <MESSAGE value=\"finish all fungtions\" />\r\n    <MESSAGE value=\"add print(&quot;Input pilihan:&quot;)\" />\r\n    <MESSAGE value=\"add .gitignore\" />\r\n    <MESSAGE value=\"Re-check\" />\r\n    <MESSAGE value=\"edit .gitignore file\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"edit .gitignore file\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <default-breakpoints>\r\n        <breakpoint type=\"python-exception\">\r\n          <properties notifyOnTerminate=\"true\" exception=\"BaseException\">\r\n            <option name=\"notifyOnTerminate\" value=\"true\" />\r\n          </properties>\r\n        </breakpoint>\r\n      </default-breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 418ce141457b71b39c822edbae958c3d3a16931d)
++++ b/.idea/workspace.xml	(date 1735362935780)
+@@ -4,8 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="2902d736-ac05-4fe7-ac1c-d99b116cbee2" name="Changes" comment="edit .gitignore file">
++    <list default="true" id="2902d736-ac05-4fe7-ac1c-d99b116cbee2" name="Changes" comment="just save">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Sample/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/tester.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -130,7 +131,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1735239321158</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary="just save">
++      <option name="closed" value="true" />
++      <created>1735304023080</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1735304023080</updated>
++    </task>
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -151,7 +160,8 @@
+     <MESSAGE value="add .gitignore" />
+     <MESSAGE value="Re-check" />
+     <MESSAGE value="edit .gitignore file" />
+-    <option name="LAST_COMMIT_MESSAGE" value="edit .gitignore file" />
++    <MESSAGE value="just save" />
++    <option name="LAST_COMMIT_MESSAGE" value="just save" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>

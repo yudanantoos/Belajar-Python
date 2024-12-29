@@ -256,5 +256,5 @@ def hapus_overtime():
 
 def input_gaji_pokok():
     print("Silahkan masukkan gaji pokoknya")
-    gapok = float(input())
+    gapok = input()
     _ot_calculation.input_gapok(gapok)

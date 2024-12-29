@@ -1,24 +1,19 @@
 import json
 import os.path
 import calendar
+import pengaturan
 
-databasenya = "../Data/data-overtime.json"
-database_gapok = "../Data/data-gapok.json"
+databasenya = pengaturan.load_pengaturan()['DEFAULT']['datafile']
 hasil_perkalian_jam = 0
 hasil_uang_lemburan = 0
 
 def cek_database():
-    if not os.path.exists(databasenya) or not os.path.exists(database_gapok):
+    if not os.path.exists(databasenya):
         penyimpanan_data = {}
-        penyimpanan_gapok = {'Gapok':0}
         pd = json.dumps(penyimpanan_data)
-        pg = json.dumps(penyimpanan_gapok)
         with open(databasenya,'w') as fley:
             fley.write(pd)
         fley.close()
-        with open(database_gapok,'w') as floy:
-            floy.write(pg)
-        floy.close()
 
 def ambil_data():
     cek_database()
@@ -67,14 +62,20 @@ def hapus_data(hapus):
         print("Belum ada data yang bisa dihapus")
 
 def ambil_gapok():
+    """
     cek_database()
     with open(database_gapok, 'r') as baca:
         lihat = baca.readline()
     konversi = json.loads(lihat)
     baca.close()
     return float(konversi['Gapok'])
+    """
+    data = float(pengaturan.load_pengaturan()['DEFAULT']['Gapok'])
+    return data
+
 
 def input_gapok(gapok):
+    """
     tampung = {'Gapok': gapok}
     js = json.dumps(tampung)
     with open(database_gapok, 'w') as simpan:
@@ -84,6 +85,9 @@ def input_gapok(gapok):
         else:
             print("Ada kesalahan, gapok belum tersimpan")
     simpan.close()
+    """
+    pengaturan.pengaturan['DEFAULT']['Gapok'] = gapok
+    pengaturan.simpan_pengaturan()
 
 def rumus(tahun, bulan, tanggal, jam_lembur):
     global hasil_perkalian_jam, hasil_uang_lemburan
