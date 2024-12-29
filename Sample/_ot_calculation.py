@@ -88,6 +88,10 @@ def input_gapok(gapok):
     """
     pengaturan.pengaturan['DEFAULT']['Gapok'] = gapok
     pengaturan.simpan_pengaturan()
+    if pengaturan.load_pengaturan()['DEFAULT']['Gapok'] == gapok:
+        print("Gapok berhasil disimpan")
+    else:
+        print("Ada kesalahan, gapok belum tersimpan")
 
 def rumus(tahun, bulan, tanggal, jam_lembur):
     global hasil_perkalian_jam, hasil_uang_lemburan

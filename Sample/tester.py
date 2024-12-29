@@ -134,6 +134,8 @@ print(o)
 """
 import pengaturan
 
-a = pengaturan.load_pengaturan()
+a = [{'Tanggal':'04/10/1990'},{'Tanggal':'01/10/1990'}]
 
-print(a['DEFAULT']['datafile'])
+for hu in a:
+    b = sorted(hu.values(), key=lambda bb : bb)
+    print(b)

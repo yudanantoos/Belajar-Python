@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2902d736-ac05-4fe7-ac1c-d99b116cbee2" name="Changes" comment="just save">
-      <change beforePath="$PROJECT_DIR$/.idea/Belajar-Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Belajar-Python.iml" afterDir="false" />
+    <list default="true" id="2902d736-ac05-4fe7-ac1c-d99b116cbee2" name="Changes" comment="pindah pengaturan data menggunakan file tes.ini">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sample/_ot_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/_ot_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample/_ot_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/_ot_operation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample/pengaturan.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/pengaturan.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sample/tes.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/tes.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sample/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/tester.py" afterDir="false" />
     </list>
@@ -144,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735304023080</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="pindah pengaturan data menggunakan file tes.ini">
+      <option name="closed" value="true" />
+      <created>1735471121911</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735471121912</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,7 +171,8 @@
     <MESSAGE value="Re-check" />
     <MESSAGE value="edit .gitignore file" />
     <MESSAGE value="just save" />
-    <option name="LAST_COMMIT_MESSAGE" value="just save" />
+    <MESSAGE value="pindah pengaturan data menggunakan file tes.ini" />
+    <option name="LAST_COMMIT_MESSAGE" value="pindah pengaturan data menggunakan file tes.ini" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
